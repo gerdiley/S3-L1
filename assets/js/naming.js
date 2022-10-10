@@ -33,8 +33,16 @@ document.getElementById('numeroGatti').innerHTML= numeroGatti;
 
 // stampo numero totale animali
 
-document.getElementById('numeroAnimali').innerHTML= numeroCani + numeroGatti;
+var totaleAnimali = document.getElementById('numeroAnimali').innerHTML= numeroCani + numeroGatti;
 
+console.log(totaleAnimali)
+
+
+var pari = ((totaleAnimali % 2) == 0)
+
+console.log(pari)
+
+document.getElementById('even').innerHTML = pari;
 
 
 
